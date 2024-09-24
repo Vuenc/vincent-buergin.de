@@ -2,24 +2,31 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+# subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  # image: IMG_2908.jpg
+  image: IMG_2908-3-4.jpg
+  # image: IMG_2917-3-4.jpg
+  # image: IMG_2908-1-1_2.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  more_info: 
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
+
+scholar:
+  sort_by: year
+  order: descending  # can be either "ascending" or "descending"
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi, I'm Vincent! I'm a computer science generalist interested in a wide range of things.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I recently graduated from the **M.Sc. Informatics** program at the **Technical University of Munich (TUM)**. In the last years, I had the chance to be involved in a number of research projects in the machine learning and medical imaging fields (in the [TUM DI-LAB](https://www.mdsi.tum.de/en/di-lab/tum-di-lab/) at the [CAMP chair](https://www.cs.cit.tum.de/camp/start/), at the [Theoretical Foundations of AI chair](https://www.cs.cit.tum.de/tfai/home/), at [ImFusion](https://www.imfusion.com/), and at the [Lab for AI in Medicine](https://aim-lab.io/)), and several projects led to published papers.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I also have a passion for mathematics, and completed a **B.Sc. in Mathematics** alongside my **B.Sc. in Computer Science** at the **University of Passau**.
+I like to work somewhere close to the border between computer science and mathematics, such as with my Master's thesis, which explored a topological loss functions rooted in persistent homology, and my Bachelor's thesis, which was about the properties of a particular stochastic order and whether or not it can be used for game theory.
+
+I've worked with a variety of programming languages and technologies, and I'm always keen to learn new ones. **Python** is my go-to language for machine learning and most day-to-day coding needs. More recently I've began to use more **C++**, and of course I love **Rust** and try to find a reason to use it whenever I can. I'm also using _JavaScript_ for interactive visualizations and creative coding, and have used _C#_ for a lot of different projects before I started my studies. I've also used _Haskell_, _Julia_ and several other languages in projects.
