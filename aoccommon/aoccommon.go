@@ -28,10 +28,17 @@ func ReadLines(filename string) []string {
 	return lines
 }
 
-func Array2D(height, width int) [][]int {
+func Array2D(height, width int, defaultValue ...int) [][]int {
 	a := make([][]int, height)
 	for i := range a {
 		a[i] = make([]int, width)
+	}
+	if len(defaultValue) > 0 {
+		for y, row := range a {
+			for x := range row {
+				a[y][x] = defaultValue[0]
+			}
+		}
 	}
 	return a
 }
@@ -56,4 +63,27 @@ func Gcd(a, b int) int {
 		return a
 	}
 	return Gcd(b, a % b)
+}
+
+type Set[T comparable] map[T]struct{}
+
+func NewSet[T comparable](elements []T) Set[T] {
+    set := Set[T]{}
+    for _, e := range elements {
+        set[e] = struct{}{}
+    }
+    return set
+}
+
+func Union[T comparable](set1, set2 Set[T]) Set[T] {
+    result := NewSet([]T{})
+
+    for elem := range set1 {
+        result[elem] = struct{}{}
+    }
+    for elem := range set2 {
+        result[elem] = struct{}{}
+    }
+
+    return result
 }
