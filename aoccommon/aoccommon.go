@@ -50,3 +50,10 @@ func SplitToInts(input, separator string) []int {
 
 	return output
 }
+
+func Gcd(a, b int) int {
+	if b == 0 {
+		return a
+	}
+	return Gcd(b, a % b)
+}
