@@ -28,10 +28,10 @@ func ReadLines(filename string) []string {
 	return lines
 }
 
-func Array2D(height, width int, defaultValue ...int) [][]int {
-	a := make([][]int, height)
+func Array2D[T any](height, width int, defaultValue ...T) [][]T {
+	a := make([][]T, height)
 	for i := range a {
-		a[i] = make([]int, width)
+		a[i] = make([]T, width)
 	}
 	if len(defaultValue) > 0 {
 		for y, row := range a {
