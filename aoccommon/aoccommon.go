@@ -87,3 +87,7 @@ func Union[T comparable](set1, set2 Set[T]) Set[T] {
 
     return result
 }
+
+func Mod(a, b int) int {
+	return (a % b + b) % b;
+}
