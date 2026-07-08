@@ -3,7 +3,7 @@ layout: post
 date: 2024-10-15 00:00:00-0400
 inline: false
 related_posts: false
-title: 'I published my post on the relAI blog: "Using topological features to prevent topological errors"'
+title: 'I published my post on the relAI blog: "Using topological features to prevent topological errors."'
 ---
 
 My blogpost on persistent homology for machine learning, based on the line of research I had the chance to contribute to in my master's thesis, was posted on the relAI blog: 
